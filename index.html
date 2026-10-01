@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CT Ippon | Jiu-Jitsu e Capoeira em Arujá</title>
+<meta name="description" content="Centro de Treinamento CT Ippon: Jiu-Jitsu e Capoeira em Arujá. União, disciplina e movimento.">
+<link rel="icon" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo">
+  <a href="#inicio" class="marca"><img src="assets/logo.svg" alt="" width="36" height="36"> CT Ippon</a>
+  <nav>
+    <a href="#modalidades">Modalidades</a>
+    <a href="#planos">Planos</a>
+    <a href="#matricula">Matrícula</a>
+    <a href="#simulador">Simulador</a>
+    <a href="#local">Onde estamos</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <p class="lema">União, disciplina e movimento</p>
+  <h1>Ippon:<br>um golpe,<br>um ponto.</h1>
+  <p class="hero-texto">Aulas de Jiu-Jitsu e Capoeira em Arujá, para crianças e adultos. Com aulas gratuitas e bolsas para quem precisa.</p>
+  <a class="botao" href="#matricula">Quero treinar</a>
+</section>
+
+<section id="modalidades">
+  <h2>Duas artes, uma família</h2>
+  <div class="duas-col">
+    <article>
+      <h3>Jiu-Jitsu</h3>
+      <p>Arte marcial de origem japonesa, desenvolvida no Brasil. Trabalha técnica, equilíbrio e alavanca. Ensina que o mais forte não é quem vence sempre, e sim quem aprende a cair e levantar.</p>
+    </article>
+    <article>
+      <h3>Capoeira</h3>
+      <p>Luta, dança e música criadas por africanos escravizados no Brasil. É patrimônio cultural do país. Aqui ela é treinada junto com a história e as cantigas que a mantêm viva.</p>
+    </article>
+  </div>
+</section>
+
+<section id="planos" class="faixa">
+  <h2>Planos e mensalidades</h2>
+  <div class="planos">
+    <div class="plano"><h3>Bolsa</h3><p class="preco">Grátis</p><p>Aulas gratuitas para famílias em situação de necessidade.</p></div>
+    <div class="plano"><h3>1 aula por semana</h3><p class="preco">R$ 60</p><p>Para começar com calma.</p></div>
+    <div class="plano"><h3>2 aulas por semana</h3><p class="preco">R$ 75</p><p>O ritmo da maioria dos alunos.</p></div>
+    <div class="plano"><h3>Aulas livres</h3><p class="preco">R$ 95</p><p>Treine quantas vezes quiser nas duas modalidades.</p></div>
+  </div>
+</section>
+
+<section id="horarios">
+  <h2>Horários das turmas</h2>
+  <p class="nota">Exemplo para edição: altere a tabela no arquivo index.html.</p>
+  <div class="rolagem">
+  <table>
+    <thead><tr><th>Turma</th><th>Dias</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Jiu-Jitsu infantil</td><td>Segunda e quarta</td><td>18h às 19h</td></tr>
+      <tr><td>Capoeira infantil</td><td>Terça e quinta</td><td>18h às 19h</td></tr>
+      <tr><td>Jiu-Jitsu adulto</td><td>Segunda, quarta e sexta</td><td>19h30 às 21h</td></tr>
+      <tr><td>Capoeira adulto</td><td>Terça e quinta</td><td>19h30 às 21h</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="matricula" class="faixa">
+  <h2>Faça sua pré-matrícula</h2>
+  <form id="form-matricula">
+    <label>Nome do aluno<input name="nome" required></label>
+    <label>Idade<input name="idade" type="number" min="3" max="99" required></label>
+    <label>Responsável (se menor de idade)<input name="responsavel"></label>
+    <label>WhatsApp<input name="whats" type="tel" required></label>
+    <label>Modalidade
+      <select name="modalidade"><option>Jiu-Jitsu</option><option>Capoeira</option><option>As duas</option></select>
+    </label>
+    <label>Plano
+      <select name="plano"><option>Bolsa (gratuito)</option><option>1 aula por semana (R$ 60)</option><option>2 aulas por semana (R$ 75)</option><option>Aulas livres (R$ 95)</option></select>
+    </label>
+    <button class="botao" type="submit">Enviar pelo WhatsApp</button>
+  </form>
+</section>
+
+<section id="simulador">
+  <h2>Simulador de viabilidade financeira</h2>
+  <p class="nota">Altere os valores para testar se as mensalidades cobrem os custos do CT. Os números iniciais são simulados.</p>
+  <div class="sim">
+    <fieldset><legend>Alunos</legend>
+      <label>Bolsistas (gratuitos)<input type="number" id="n0" value="15" min="0"></label>
+      <label>Plano R$ 60<input type="number" id="n1" value="25" min="0"></label>
+      <label>Plano R$ 75<input type="number" id="n2" value="40" min="0"></label>
+      <label>Plano R$ 95<input type="number" id="n3" value="15" min="0"></label>
+    </fieldset>
+    <fieldset><legend>Custos mensais (R$)</legend>
+      <label>Aluguel<input type="number" id="c1" value="2200" min="0"></label>
+      <label>Remuneração dos instrutores<input type="number" id="c2" value="2400" min="0"></label>
+      <label>Materiais (tatames, uniformes, instrumentos)<input type="number" id="c3" value="350" min="0"></label>
+      <label>Limpeza<input type="number" id="c4" value="250" min="0"></label>
+      <label>Outros (água, luz, divulgação)<input type="number" id="c5" value="300" min="0"></label>
+    </fieldset>
+    <div class="resultado" aria-live="polite">
+      <dl>
+        <dt>Receita mensal</dt><dd id="r-rec"></dd>
+        <dt>Custo total</dt><dd id="r-cus"></dd>
+        <dt>Resultado</dt><dd id="r-res" class="destaque"></dd>
+        <dt>Margem</dt><dd id="r-mar"></dd>
+        <dt>Mensalidade média dos pagantes</dt><dd id="r-med"></dd>
+        <dt>Custo por aluno (todos)</dt><dd id="r-cpa"></dd>
+        <dt>Bolsistas que o CT sustenta</dt><dd id="r-bol"></dd>
+      </dl>
+      <p id="r-msg"></p>
+    </div>
+  </div>
+</section>
+
+<section id="local" class="faixa">
+  <h2>Onde estamos</h2>
+  <p>Arujá, São Paulo. Edite o endereço completo, o WhatsApp e o mapa no arquivo index.html.</p>
+  <p><a class="botao" href="https://wa.me/5511900000000" id="link-whats">Falar no WhatsApp</a></p>
+</section>
+</main>
+
+<footer>
+  <p>CT Ippon · Jiu-Jitsu e Capoeira · Arujá/SP</p>
+  <p>Protótipo desenvolvido como Trabalho de Conclusão de Curso.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
